@@ -1,0 +1,9 @@
+---
+modules:
+  cloud:
+    token: 132e46234caf3d6b4694e544:eda27bf0468129b19f192c54df6da0617f1426f5429e670d303bb083766fedd36034d19c
+#    test: Taurus Jenkins test
+    report-name: TestNG Demo
+    project: 41226
+    timeout: 10s
+    browser-open: start
