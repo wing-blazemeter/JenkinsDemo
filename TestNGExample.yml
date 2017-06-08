@@ -1,0 +1,13 @@
+---
+execution:
+- executor: selenium
+  iterations: 3
+  runner: testng
+  scenario:
+    script: TestNGExample.java
+services:
+- virtual-display
+- module: shellexec
+  prepare:
+  - wget http://selenium-release.storage.googleapis.com/2.53/selenium-server-standalone-2.53.0.jar
+  - mv selenium-server-standalone-2.53.0.jar ~/.bzt/selenium-taurus/selenium-server.jar
