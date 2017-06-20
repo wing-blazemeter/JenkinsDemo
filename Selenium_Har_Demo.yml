@@ -1,0 +1,19 @@
+---
+scenarios:
+ req:
+   browser: Chrome
+   requests:
+   - http://blazedemo.com/
+   - http://blazedemo.com/reserve.php
+
+execution:
+ - scenario: req
+   executor: selenium
+   iterations: 1
+
+services:
+- module: virtual-display
+  width: 1024
+  height: 768
+- capturehar
+- screenshoter
