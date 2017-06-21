@@ -15,5 +15,6 @@ execution:
 services:
 - virtual-display
 
-#- capturehar
-#- screenshoter
+modules:
+  blazemeter:
+    test: SeleniumBlazeDemo
